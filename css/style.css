@@ -1,0 +1,352 @@
+    /*resetConfigs*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        border: none;
+        outline: none;
+        font-weight: 300;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 3% 4%;
+        float: left;
+        text-align: center;
+    }
+    
+    body {
+        background-color: #f5f5f5;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    /*cabeçalho*/
+    
+    .logo {
+        width: 56px;
+        height: 56px;
+        background: url('../img/logo-mobile.png') center center/56px;
+        background-repeat: no-repeat;
+        font-size: 0pt;
+        float: left;
+    }
+    
+    .btn-menu {
+        width: 56px;
+        height: 56px;
+        color: white;
+        float: right;
+        text-align: center;
+        background: linear-gradient(to right, #ce2e3c, #da6709);
+        border-radius: 56px;
+        cursor: pointer;
+    }
+    /*menu*/
+    
+    .menu {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 1;
+        left: 0;
+    }
+    
+    .btn-close {
+        font-size: 1.5em;
+        color: white;
+        float: right;
+        cursor: pointer;
+        margin: 2% 3% 0 0;
+    }
+    
+    .menu ul {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menu li {
+        padding: 1.5%;
+    }
+    
+    .menu ul li a {
+        font-size: 2em;
+        color: #fff;
+        padding: 1.5% 3%;
+    }
+    
+    .menu ul li a:hover {
+        border: solid 1px #da6709;
+    }
+    /*banner*/
+    
+    .banner {
+        background: url('../img/bg.jpg') no-repeat fixed;
+    }
+    
+    .title {
+        width: 100%;
+    }
+    
+    .title h2 {
+        font-size: 2.5em;
+        color: #fff;
+        font-weight: 700;
+    }
+    
+    .title h3 {
+        font-size: 1.5em;
+        color: #fff;
+    }
+    
+    .buttons {
+        width: 100%;
+        margin-top: 2%;
+    }
+    
+    .buttons i {
+        float: right;
+    }
+    
+    .buttons button {
+        width: 100%;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 1.5em;
+        text-align: left;
+        padding: 5%;
+    }
+    
+    .btn-cadastrar {
+        background-color: #fff;
+        color: #130400;
+    }
+    
+    .btn-sobre {
+        background-color: #130400;
+        color: #fff;
+        margin-top: 2%;
+    }
+    /*Serviços*/
+    
+    .servico {
+        border-radius: 10px;
+        background-color: #fff;
+        text-align: left;
+        margin-bottom: 3%;
+    }
+    
+    .servico img {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .inner {
+        padding: 7%;
+        color: #130400;
+    }
+    
+    .inner a {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #130400;
+    }
+    
+    .inner h4 {
+        font-size: 1.2em;
+        margin-top: 2%;
+    }
+    
+    .inner p {
+        margin-top: 6%;
+        line-height: 1.5em;
+    }
+    /*Newsletter*/
+    
+    .newsletter {
+        background-color: #130400;
+    }
+    
+    .newsletter h2 {
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: 700;
+    }
+    
+    .newsletter h3 {
+        color: #fff;
+    }
+    
+    .newsletter form {
+        margin-top: 2%;
+    }
+    
+    .newsletter input {
+        width: 100%;
+        color: #fff;
+        background-color: #130400;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 5%;
+        border-radius: 5px;
+    }
+    
+    .newsletter button {
+        width: 100%;
+        color: #130400;
+        background-color: #fff;
+        padding: 5%;
+        margin-top: 2%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /*Rodapé*/
+    
+    .rodape {
+        background: linear-gradient(to right, #ce2e3c, #da6709);
+    }
+    
+    .social-icons a {
+        font-size: 1.5em;
+        margin-right: 3%;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .social-icons a:last-child {
+        margin-right: 0;
+    }
+    
+    .social-icons a:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .copyright {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    /*Responsive*/
+    
+    @media screen and (min-width: 480px) {
+        .logo {
+            width: 214px;
+            background: url('../img/logo.png') center center/214px;
+        }
+        .buttons button {
+            font-size: 2em;
+            font-weight: 350;
+        }
+    }
+    /*Small Devices*/
+    
+    @media screen and (min-width: 768px) {
+        .servico {
+            width: 49%;
+            float: left;
+            margin-right: 2%;
+        }
+        .servico:nth-child(2) {
+            margin-right: 0;
+        }
+        .newsletter h2 {
+            font-size: 2em;
+        }
+        .newsletter h3 {
+            font-size: 1.5em;
+        }
+        .newsletter input {
+            width: 69%;
+            padding: 2%;
+            float: left;
+            margin-right: 1%;
+            font-size: 1.5em;
+        }
+        .newsletter button {
+            width: 29%;
+            padding: 2%;
+            margin-left: 1%;
+            float: right;
+            margin-top: 0;
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+    }
+    /*Meduim Devices - Tablets*/
+    
+    @media screen and (min-width: 960px) {
+        .title {
+            width: 70%;
+            float: left;
+            text-align: left;
+        }
+        .title h2 {
+            font-size: 3em;
+        }
+        .title h3 {
+            font-size: 2em;
+        }
+        .buttons {
+            width: 30%;
+            float: right;
+            margin-top: 2%;
+        }
+        .servico:nth-child(2) {
+            margin-right: 1.3%;
+        }
+        .servico {
+            width: 32%;
+            margin-right: 1.3%;
+        }
+        .newsletter input {
+            width: 60%;
+            float: none;
+        }
+        .newsletter button {
+            width: 20%;
+            float: none;
+        }
+    }
+    /*Large Devices - Wide Screen*/
+    
+    @media screen and (min-width: 1280px) {
+        .btn-menu {
+            display: none;
+        }
+        .btn-close {
+            display: none;
+        }
+        .menu {
+            display: block!important;
+            width: auto;
+            height: 56px;
+            line-height: 56px;
+            float: right;
+            background-color: #f5f5f5;
+            position: static;
+        }
+        .menu li {
+            padding: 0;
+            float: left;
+        }
+        .menu ul li a {
+            color: #130400;
+            font-size: 1em;
+            padding: 15px;
+            font-weight: 400;
+        }
+        .menu ul li a:hover {
+            border: none;
+            color: #da6709;
+        }
+    }
